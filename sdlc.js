@@ -30,7 +30,7 @@ const analysisOfRequirements = "This is the second step, in which understanding 
 
 const design = "This is the third step, in which a hands on model is created. The purpose of this step is to have a visual and hands-on idea of how the software will look and work."
 
-const implementation = "This is the fourth step, in which actual code is being written. Developers will begin  and execute the coding process until the software is ready for integration."
+const implementation = "This is the fourth step, in which actual code is being written. Developers will begin and execute the coding process until the software is ready for integration."
 
 const testingAndIntegration = "This is the fifth step, in which the software has been tested and accepted by the user. This phase may require debugging and continues until the system operates in accordance with the defined requirements."
 

@@ -49,10 +49,41 @@ const pinkPrice = .55
     Log `totalAcres` to the console.
 */
 
-// CODE HERE
+// want to find total acres picked per week in apple farm
+// let totalAcres = 0 to act as starting point and has to be a variable since it will eventually be logged
+// set for loop
+// write code block containing equation to find total acres
+// code block in brackets: totalAcres = totalAcres + fujiAcres[i]
+// log totalAcres
 
+let totalAcres = 0
 
+for (let i = 0; i < fujiAcres.length; i++){
+    totalAcres += fujiAcres[i]
+}
 
+for (let i = 0; i < fujiAcres.length; i++){
+    totalAcres += galaAcres[i]
+}
+
+for (let i = 0; i < fujiAcres.length; i++){
+    totalAcres += pinkAcres[i]
+}
+console.log(totalAcres)
+
+//another solution:
+// for(let i = 0; i < 7; i++){
+//     totalAcres += fujiAcres[i]
+//     totalAcres += galaAcres[i]
+//     totalAcres += pinkAcres[i]
+// }
+// console.log(totalAcres)
+
+//another solution:
+// for(let i = 0; i < 7; i++){
+//     totalAcres += fujiAcres[i] + galaAcres[i] + pinkAcres[i]
+// }
+// console.log(totalAcres)
 
 
 // PROBLEM 2
@@ -67,10 +98,12 @@ const pinkPrice = .55
     Log `averageDailyAcres` to the console.
 */
 
-// CODE HERE
+// declare averageDailyAcres variable
+// Calculate average -> (total acres/# of days in week) to see about how many apples each day
+// log average which 9 acres are being picked per day
 
-
-
+let averageDailyAcres = totalAcres/7
+console.log(averageDailyAcres)
 
 
 // PROBLEM 3
@@ -105,9 +138,16 @@ const pinkPrice = .55
 let acresLeft = 174 
 let days = 0
 
-// CODE HERE
+// want while loop to run as long as acres left is > 0 because there is still more work
+// code block being executed on each loop: 1 day is added to each loop = day ++ incrementor
+// use given acresLeft variable to subtract from averageDailyAcres to find how many acres are left each day
+// log days to find how many days it would take to pick from 174 acres
 
-
+while(acresLeft > 0){
+    days ++
+    acresLeft -= averageDailyAcres
+}
+console.log(days)
 
 // PROBLEM 4
 
@@ -133,16 +173,38 @@ let days = 0
     values to the new arrays.
 */
 
-// CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+// Declare arrays with given variables...brackets are kept empty because we will be listing the daily amount of apples
+// set 3 for loops
+// for loop (pulling from acres array)
+// declare variable tonConversion to have each acre yield 6.5 --> let tonConversion = pinkAcres[i] * 6.5
+// copy and paste for loops bc using same structure 
+// log ton conversion
+
+let fujiTons = []
+let galaTons = []
+let pinkTons = []
 
 
+for(let i = 0; i < fujiAcres.length; i++){
+    let tonConversion = fujiAcres[i] * 6.5
+    fujiTons.push(tonConversion)
+}
+console.log(tonConversion)
 
+for(let i = 0; i < galaAcres.length; i++){
+    let tonConversion = galaAcres[i] * 6.5
+    galaTons.push(tonConversion)
+}
+console.log(tonConversion)
 
+for(let i = 0; i < pinkAcres.length; i++){
+    let tonConversion = pinkAcres[i] * 6.5
+    pinkTons.push(tonConversion)
+}
+console.log(tonConversion)
 
+// computer is not picking up that tonConversion variable is declared
 
 // PROBLEM 5
 
@@ -160,13 +222,31 @@ let days = 0
     Hint: there are 2000 pounds in a ton.
 */
 
-// CODE HERE 
+// using solution from previous problem
+// set for loop to pull from tons array
+// convert tons into pounds
+// log pounds 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
 
+let fujiPounds = 0
+let galaPounds = 0
+let pinkPounds = 0
 
+for(let i = 0; i < fujiTons.length; i++){
+    fujiPounds += (fujiTons[i] * 2000)
+}
+
+for(let i = 0; i < galaTons.length; i++){
+    galaPounds += (galaTons[i] * 2000)
+}
+
+for(let i = 0; i < pinkTons.length; i++){
+    pinkPounds += (pinkTons[i] * 2000)
+}
+
+console.log(fujiPounds)
+console.log(galaPounds)
+console.log(pinkPounds)
 
 
 
@@ -187,13 +267,17 @@ let days = 0
     console. 
 */
 
+
+
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds * fujiPrice
+let galaProfit = galaPounds * galaPrice
+let pinkProfit = pinkPounds * pinkPrice
 
-
+console.log(fujiProfit)
+console.log(galaProfit)
+console.log(pinkProfit)
 
 
 
@@ -209,3 +293,7 @@ let days = 0
 */
 
 // CODE HERE
+
+let totalProfit = fujiProfit + galaProfit + pinkProfit
+
+console.log(totalProfit)

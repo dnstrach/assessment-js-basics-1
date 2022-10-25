@@ -1,7 +1,7 @@
 //////////////////PROBLEM 1////////////////////
 /* Create a variable called 'myName' with a value that is your name as a string. */
 
-// Declare the variable called 'myName'
+// Declare the variable called 'myName' using const or let
 // Use equal operator 
 // Type string using quotes since it is a non-number datatype
 
@@ -23,7 +23,7 @@ let faveNum = 24
 // Use equal operator 
 // Type boolean answer
 
-let lovesCode = true
+const lovesCode = true
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -33,9 +33,9 @@ let lovesCode = true
 */
 
 
-// Format if-statement structure
+// Format if-statement structure if(){}
 // Type the first if condition in first parentheses 
-// Log statement after curly bracket
+// Log statement in curly brackets
 // Type 'anything else' condition 
 // Log statement 
 
@@ -51,7 +51,8 @@ if (faveNum === 13){
 */
 
 
-// Format for loop structure
+// Format for loop structure for(){}
+// Type inital value - how many times has program run, condition - how many times want program to run, and incrementor - what's happening at the end of each loop in ()
 // Set i to be less than 5 since . . .
 //  1 2 3 4 5
 //  0 1 2 3 4 . . . will force incrementor to stop at 5 loops. 

@@ -33,7 +33,7 @@ const gitInitDefintiion = "Git Init is a Git command that initializes a local re
     It should be a string containing your best definition of what 'git clone' does.
 */
 
-const gitCloneDefinition = "Git Clone is a Git command that copies an already existing Git repository."
+const gitCloneDefinition = "Git Clone is a Git command that copies an already existing Git repository. How teams pull repository into their own computer."
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -63,9 +63,9 @@ const gitAddDefinition = "Git Add is a Git command that adds some files to be tr
     It should be a string containing the code to commit using the message "initial commit".
 */
 
-const gitCommitDefiniton = "Git commit is a Git command that creates a snap of the files I'm tracking. In layman terms, Git Commit solidifies the saved version of your file before transferring it into the Git repository."
+const gitCommitDefiniton = "Git commit is a Git command that creates a snap or checkpoint of the files I'm tracking. In layman terms, Git Commit solidifies the saved version of your file before transferring it into the Git repository."
 
-const gitCommitCode = "Git Commit Code are the command lines to transfer and save your computer's file into the Git repository."
+const gitCommitCode = "Git Commit Code are the command lines to transfer and save your computer's file into the Git repository. git commit -m 'message goes here'"
 
 
 //////////////////PROBLEM 8////////////////////
@@ -75,3 +75,5 @@ const gitCommitCode = "Git Commit Code are the command lines to transfer and sav
 */
 
 const gitPush = "Git Push is a Git command that finalizes in uploading your computer's file including saved versions/commits into the Git repository."
+
+// Analogy - I like to think of git as getting a present for someone. git add is when you buy the present, git commit is when you wrap the present, and git push is when you give the present to your friend.
